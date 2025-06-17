@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="player">
+    <img src="images/default.jpg" id="cover" alt="Album Art">
+    <h2 id="title">Loading...</h2>
+    <audio id="audio" src=""></audio>
+
+    <div class="time-display">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="controls">
+      <button id="shuffle">🔀</button>
+      <button id="prev">&laquo;</button>
+      <button id="play">&#9658;</button>
+      <button id="next">&raquo;</button>
+      <button id="repeat">🔁</button>
+    </div>
+
+    <div class="volume-container">
+      <label for="volume">🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01">
+    </div>
+
+    <ul class="playlist" id="playlist">
+        
+      <!-- Playlist songs dynamically populated -->
+    </ul>
+
+    <a id="download" href="#" download class="download-btn">⬇️ Download</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
